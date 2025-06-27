@@ -1,7 +1,13 @@
+import Nav from "./Nav";
+import Hero from "./Hero";
+
 function Landing() {
-    return (
-      <div className="flex justify-center w-screen h-min-screen bg-amber-400">Landing</div>
-    )
-  }
-  
-  export default Landing
+  return (
+    <>
+      <Nav />
+      <Hero />
+    </>
+  );
+}
+
+export default Landing;
