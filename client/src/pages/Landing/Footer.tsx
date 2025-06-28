@@ -1,11 +1,8 @@
-import { Separator } from "@/components/ui/separator";
 import { FlaskConical } from "lucide-react";
 
 function Footer() {
   return (
-    <section className="w-full flex flex-col items-center">
-      <Separator />
-
+    <section className="w-full flex flex-col items-center bg-neutral-100">
       <div className="flex w-full max-w-5xl items-start justify-between text-neutral-500 py-16">
         <div className="flex gap-2 items-center text-primary">
           <FlaskConical />
