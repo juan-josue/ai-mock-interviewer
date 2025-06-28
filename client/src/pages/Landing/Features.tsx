@@ -35,7 +35,7 @@ function Features() {
         {featureData.map(({ icon: Icon, title, description }) => (
           <div className="flex flex-col gap-8 w-1/3" key={title}>
             <div className="flex items-center justify-center rounded-full bg-blue-200 w-12 h-12">
-              <Icon className="text-blue-400" />
+              <Icon className="text-blue-600" />
             </div>
             <h3 className="text-2xl font-bold text-foreground">{title}</h3>
             <p className="text-md text-neutral-500">{description}</p>

@@ -2,6 +2,7 @@ import Nav from "./Nav";
 import Hero from "./Hero";
 import DemoVideo from "./DemoVideo";
 import Features from "./Features";
+import Process from "./Process";
 
 function Landing() {
   return (
@@ -10,6 +11,7 @@ function Landing() {
       <Hero />
       <DemoVideo />
       <Features />
+      <Process />
     </>
   );
 }
