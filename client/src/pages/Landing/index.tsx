@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import DemoVideo from "./DemoVideo";
 import Features from "./Features";
 import Process from "./Process";
+import Testimonials from "./Testimonials";
 
 function Landing() {
   return (
@@ -12,6 +13,7 @@ function Landing() {
       <DemoVideo />
       <Features />
       <Process />
+      <Testimonials />
     </>
   );
 }

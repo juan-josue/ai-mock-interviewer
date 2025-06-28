@@ -39,7 +39,7 @@ function Process() {
     <section className="w-full flex flex-col items-center py-16 gap-16 bg-neutral-100">
       <div className="flex gap-4 w-5xl">
         {/* process bullet points */}
-        <div className="flex flex-col gap-4 w-1/2">
+        <div className="flex flex-col gap-8 w-1/2">
           <h1 className="text-4xl font-bold text-left text-foreground">
             Recieve Detailed AI Scoring on Code and Communication
           </h1>
