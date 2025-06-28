@@ -61,7 +61,7 @@ function Process() {
         >
           {/* Beams */}
           <AnimatedBeam
-            duration={3}
+            duration={5}
             curvature={3}
             gradientStartColor="#7dedf5"
             gradientStopColor="#6055d9"
@@ -70,7 +70,8 @@ function Process() {
             toRef={div3Ref}
           />
           <AnimatedBeam
-            duration={3}
+            duration={5}
+            delay={1}
             curvature={3}
             gradientStartColor="#7dedf5"
             gradientStopColor="#6055d9"
@@ -79,7 +80,8 @@ function Process() {
             toRef={div3Ref}
           />
           <AnimatedBeam
-            duration={3}
+            duration={5}
+            delay={2}
             gradientStartColor="#7dedf5"
             gradientStopColor="#6055d9"
             containerRef={containerRef}
