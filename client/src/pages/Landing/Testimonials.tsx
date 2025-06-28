@@ -70,7 +70,7 @@ function Testimonials() {
       <div className="relative flex flex-col gap-4 max-w-5xl text-center">
         <p className="text-xl text-blue-400 uppercase">Testimonials</p>
         <h1 className="text-5xl font-bold text-center text-foreground mb-16">
-          Don't Just Take Our Word For It
+          Don't just take our word for it.
         </h1>
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review, index) => (
