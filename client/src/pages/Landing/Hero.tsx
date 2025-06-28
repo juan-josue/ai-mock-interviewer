@@ -18,7 +18,7 @@ function Hero() {
           Intelligent mock technical interviews <br /> with insight beyond
           words.
         </h5>
-        <Button className="bg-primary text-background">
+        <Button className="bg-blue-400 text-background">
           <FlaskConical /> Get started for free
         </Button>
         <p className="text-md text-neutral-500">

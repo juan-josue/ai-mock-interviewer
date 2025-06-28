@@ -2,7 +2,7 @@ import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 
 function DemoVideo() {
   return (
-    <section className="relative flex justify-center w-full">
+    <section className="relative flex justify-center w-full pb-8">
         <div className="max-w-5xl">
           <HeroVideoDialog
             className="block"

@@ -14,7 +14,7 @@ function Nav() {
             <Button className="text-foreground" variant="outline">
               <LogIn /> Login
             </Button>
-            <Button className="bg-primary text-background">
+            <Button className="bg-blue-400 text-background">
               <FlaskConical /> Get started for free
             </Button>
           </div>
