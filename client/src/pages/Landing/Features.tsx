@@ -27,7 +27,7 @@ function Features() {
       <div className="flex flex-col gap-4 max-w-5xl text-center">
         <p className="text-xl text-blue-400 uppercase">Features</p>
         <h1 className="text-5xl font-bold text-center text-foreground">
-          Built to Replicate Real Interviews <br /> and Make You Better at Them
+          Built to replicate real interviews <br /> and make you better at them.
         </h1>
       </div>
 

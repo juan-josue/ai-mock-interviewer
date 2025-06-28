@@ -41,7 +41,7 @@ function Process() {
         {/* process bullet points */}
         <div className="flex flex-col gap-8 w-1/2">
           <h1 className="text-4xl font-bold text-left text-foreground">
-            Recieve Detailed AI Scoring on Code and Communication
+            Recieve detailed AI feedback on code and communication.
           </h1>
           <ul className="flex flex-col gap-4 text-left text-md list-disc pl-5">
             {bulletPoints.map((point, index) => {
