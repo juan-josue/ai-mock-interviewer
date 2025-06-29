@@ -29,7 +29,7 @@ function AuthButtons() {
 function Nav() {
   return (
     <section className="z-50 fixed w-full bg-background">
-      <div className="flex w-full max-w-5xl p-4">
+      <div className="mx-auto w-full max-w-5xl p-4">
         <nav className="flex justify-between w-full">
           <Logo />
 
