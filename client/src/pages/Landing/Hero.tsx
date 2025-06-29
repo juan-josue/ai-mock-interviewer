@@ -1,7 +1,8 @@
-import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 import { Button } from "@/components/ui/button";
-import { FlaskConical } from "lucide-react";
+import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 import { SparklesText } from "@/components/magicui/sparkles-text";
+
+import { FlaskConical } from "lucide-react";
 
 function Hero() {
   return (
@@ -10,15 +11,18 @@ function Hero() {
         className="z-0 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
         squares={[40, 30]}
       />
-      <div className="flex z-10 flex-col items-center gap-8 text-center">
-        <h1 className="text-5xl font-bold text-center text-foreground">
-          Ace your next coding <br /> interview with <SparklesText className="inline-block">Mock Lab</SparklesText>
+      <div className="z-10 flex flex-col items-center gap-8 px-4 text-center">
+        <h1 className=" text-center text-foreground text-3xl md:text-5xl font-bold">
+          Ace your next coding <br /> interview with{" "}
+          <SparklesText className="block md:inline-block">
+            Mock Lab
+          </SparklesText>
         </h1>
-        <h5 className="text-2xl text-foreground">
+        <h2 className="text-foreground text-2xl">
           Intelligent mock technical interviews <br /> with insight beyond
           words.
-        </h5>
-        <Button className="bg-blue-400 text-background">
+        </h2>
+        <Button className="text-background bg-blue-400">
           <FlaskConical /> Get started for free
         </Button>
         <p className="text-md text-neutral-500">
