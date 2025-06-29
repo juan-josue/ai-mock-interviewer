@@ -67,7 +67,7 @@ const TestimonialCard = ({
 function Testimonials() {
   return (
     <section className="flex justify-center w-full py-16">
-      <div className="flex flex-col gap-4 w-full max-w-5xl text-center">
+      <div className="flex flex-col gap-4 w-full max-w-5xl text-center px-4">
         {/* typography */}
         <p className="text-xl text-blue-400 uppercase">Testimonials</p>
         <h1 className="text-5xl font-bold text-center text-foreground mb-16">
