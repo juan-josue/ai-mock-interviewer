@@ -5,20 +5,25 @@ import { Safari } from "@/components/magicui/safari";
 
 function CallToAction() {
   return (
-    <section className="w-full flex flex-col items-center py-16 gap-16">
-      <div className="relative flex flex-col items-center gap-4 w-5xl text-center p-16 pb-0 rounded-4xl overflow-hidden">
-        <h1 className="text-5xl font-bold text-center text-foreground">
+    <section className="flex justify-center w-full">
+      <div className="relative flex flex-col items-center gap-4 w-full max-w-5xl p-16 pb-0 rounded-4xl text-center">
+        {/* typography */}
+        <h1 className="text-5xl text-center text-foreground font-bold">
           Train like it's the real thing.
         </h1>
         <Button className="bg-blue-400 text-background max-w-sm">
           <FlaskConical /> Get started for free
         </Button>
 
-        {/* Safari clipping wrapper */}
-        <div className="w-11/12 h-[400px] overflow-hidden">
-          <Safari className="w-full scale-100" url="https://magicui.design" />
+        {/* browser mock */}
+        <div className="w-full overflow-hidden">
+          <Safari
+            className="w-full h-auto max-w-full"
+            url="https://magicui.design"
+          />
         </div>
 
+        {/* background flickering grid */}
         <FlickeringGrid
           className="absolute inset-0 -z-10 size-full"
           squareSize={4}
