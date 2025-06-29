@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 function Landing() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Nav />
       <Hero />
       <DemoVideo />
@@ -18,7 +18,7 @@ function Landing() {
       <Testimonials />
       <CallToAction />
       <Footer />
-    </>
+    </div>
   );
 }
 
