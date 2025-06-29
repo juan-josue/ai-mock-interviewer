@@ -23,18 +23,18 @@ const featureData = [
 
 function Features() {
   return (
-    <section className="w-full flex flex-col items-center py-16 gap-16">
-      <div className="flex flex-col gap-4 max-w-5xl text-center">
+    <section className="w-full flex flex-col items-center py-16 gap-8">
+      <div className="flex flex-col gap-4 max-w-5xl text-center p-4">
         <p className="text-xl text-blue-400 uppercase">Features</p>
-        <h1 className="text-5xl font-bold text-center text-foreground">
-          Built to replicate real interviews <br /> and make you better at them.
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-foreground">
+          Built to replicate real interviews <br className="hidden md:block" /> and make you better at them
         </h1>
       </div>
 
-      <div className="flex justify-between gap-16 w-full max-w-5xl ">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 w-full max-w-5xl p-4">
         {featureData.map(({ icon: Icon, title, description }) => (
-          <div className="flex flex-col gap-8 w-1/3" key={title}>
-            <div className="flex items-center justify-center rounded-full bg-blue-200 w-12 h-12">
+          <div className="flex flex-col gap-4 md:gap-8 w-5/6 md:w-1/3" key={title}>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-200">
               <Icon className="text-blue-600" />
             </div>
             <h3 className="text-2xl font-bold text-foreground">{title}</h3>
