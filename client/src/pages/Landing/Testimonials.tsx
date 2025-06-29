@@ -66,24 +66,29 @@ const TestimonialCard = ({
 
 function Testimonials() {
   return (
-    <section className="w-full flex flex-col items-center py-16 gap-16">
-      <div className="relative flex flex-col gap-4 max-w-5xl text-center">
+    <section className="w-full py-16">
+      <div className="flex flex-col gap-4 w-full max-w-5xl text-center">
+        {/* typography */}
         <p className="text-xl text-blue-400 uppercase">Testimonials</p>
         <h1 className="text-5xl font-bold text-center text-foreground mb-16">
           Don't just take our word for it.
         </h1>
-        <Marquee pauseOnHover className="[--duration:20s]">
-          {firstRow.map((review, index) => (
-            <TestimonialCard key={index} {...review} />
-          ))}
-        </Marquee>
-        <Marquee reverse pauseOnHover className="[--duration:20s]">
-          {secondRow.map((review, index) => (
-            <TestimonialCard key={index} {...review} />
-          ))}
-        </Marquee>
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+
+        {/* infinite marquees */}
+        <div className="relative w-full">
+          <Marquee pauseOnHover className="[--duration:20s]">
+            {firstRow.map((review, index) => (
+              <TestimonialCard key={index} {...review} />
+            ))}
+          </Marquee>
+          <Marquee reverse pauseOnHover className="[--duration:20s]">
+            {secondRow.map((review, index) => (
+              <TestimonialCard key={index} {...review} />
+            ))}
+          </Marquee>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+        </div>
       </div>
     </section>
   );
