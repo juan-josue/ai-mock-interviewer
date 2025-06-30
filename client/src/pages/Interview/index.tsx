@@ -13,7 +13,7 @@ function index() {
       <main className="flex flex-col w-full h-full">
         <header className="p-4 bg-green-200">header</header>
 
-        <div className="flex w-full h-full bg-pink-300">
+        <div className="flex w-full h-full">
           <Problem />
           <div className="flex flex-col w-6/12 bg-blue-200">
             <Editor
@@ -22,7 +22,7 @@ function index() {
               defaultValue="print('Welcome to Mock Lab!')"
             />
           </div>
-          <div className="flex flex-col w-3/12 bg-blue-200">dialogue area</div>
+          <div className="flex flex-col w-2/12 bg-blue-200">dialogue area</div>
         </div>
       </main>
     </div>
