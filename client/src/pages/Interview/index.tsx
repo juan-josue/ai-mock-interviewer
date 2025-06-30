@@ -2,6 +2,7 @@ import Editor from "@monaco-editor/react";
 
 import SideNav from "./SideNav";
 import Problem from "./Problem";
+import Header from "./Header";
 
 function index() {
   return (
@@ -11,7 +12,7 @@ function index() {
 
       {/* main content area */}
       <main className="flex flex-col w-full h-full">
-        <header className="p-4 bg-green-200">header</header>
+        <Header />
 
         <div className="flex w-full h-full">
           <Problem />
