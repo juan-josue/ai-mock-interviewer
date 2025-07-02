@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 
 function Problem() {
   return (
-    <div className="flex flex-col gap-4 w-3/12 p-4 border-r-1 border-neutral-200 bg-background">
+    <div className="flex flex-col gap-4 w-3/12 p-4 border-r-1 border-neutral-200 bg-background overflow-y-scroll">
       {/* problem title and difficulty */}
       <div className="flex items-center gap-4">
         <h1 className="text-primary text-lg">Valid Parentheses</h1>
