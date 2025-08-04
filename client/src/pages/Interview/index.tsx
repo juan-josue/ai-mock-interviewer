@@ -1,25 +1,8 @@
-import Editor from "@monaco-editor/react";
-
 import SideNav from "./SideNav";
 import Problem from "./Problem";
 import Header from "./Header";
 import Chat from "./Chat";
-
-const placeHolderCode = `class Solution:
-    def isValid(self, s: str) -> bool:
-        d = { '{' : '}', '(' : ')', '[' : ']'}
-        stack = []
-
-        for char in s:
-            if char in d.keys():
-                stack.append(char)
-            else:
-                if not stack or char != d[stack[-1]]:
-                    return False
-                else:
-                    stack.pop()
-        return stack == []
-`;
+import CodeEditor from "./CodeEditor";
 
 function index() {
   return (
@@ -34,11 +17,7 @@ function index() {
         <div className="flex w-full h-full">
           <Problem />
           <div className="flex flex-col w-6/12 border-r-1 border-neutral-200 bg-background">
-            <Editor
-              height="100%"
-              defaultLanguage="python"
-              defaultValue={placeHolderCode}
-            />
+            <CodeEditor />
           </div>
           <Chat />
         </div>
