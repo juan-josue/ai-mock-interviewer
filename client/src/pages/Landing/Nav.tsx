@@ -1,8 +1,15 @@
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
+
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-import { FlaskConical, LogIn, Menu } from "lucide-react";
+import { FlaskConical, Menu } from "lucide-react";
 
 function Logo() {
   return (
@@ -16,12 +23,23 @@ function Logo() {
 function AuthButtons() {
   return (
     <div className="flex flex-col md:flex-row gap-4">
-      <Button className="text-foreground" variant="outline">
-        <LogIn /> Login
-      </Button>
-      <Button className="text-background bg-blue-400">
-        <FlaskConical /> Get started for free
-      </Button>
+      <>
+        {/* Show sign in button */}
+        <SignedOut>
+          <SignInButton>
+            <Button className="text-background bg-blue-400">Sign In</Button>
+          </SignInButton>
+        </SignedOut>
+
+        {/* Show user button if signed in */}
+        <SignedIn>
+          <UserButton>
+            <Button className="text-background bg-blue-400">
+              Go to Dashboard
+            </Button>
+          </UserButton>
+        </SignedIn>
+      </>
     </div>
   );
 }
