@@ -28,7 +28,6 @@ function CodeEditor() {
   return (
     <div className="flex flex-col w-full h-full">
       <Editor
-        height="100%"
         defaultLanguage="python"
         value={code}
         onChange={(val: string | undefined) => setCode(val || "")}
